@@ -1,0 +1,14 @@
+My iPad 4 mini issue
+
+Hello!
+
+My iPad 4 mini stays on the apple logo for a while and restarts again and again and doesn't launch to the home screen as usual!!
+
+Could anyone help me fix it?
+
+
+the issue with your iPad seems unusual!
+have you tried to jailbreak it before. I am asking that question because jailbreaking the iPad the wrong way causes this issue.
+if yes, the only solution is to reinstall the iPad software. Visit the following link to know how to do that.
+
+https://support.apple.com/en-us/HT204204

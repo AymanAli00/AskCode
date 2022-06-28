@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ayman F. Ali">
+    <meta name="description" content="AskCode Homepage">
+    <meta name="keywords" content="AskCode">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css" type="text/css">
+    <title>AskCode</title>
+  </head>
+  <body>
+    <div class="form">
+      <div class="login-box">
+        <div class="btn-box">
+          <div id="btn"></div>
+           <button type="button" class="toggle-btn" onclick="login()">login</button>
+           <button type="button" class="toggle-btn"onclick="signin()">Sing In</button>
+        </div>
+
+        <?php echo $error; ?>
+        <form id="login" class="login-form" action="login.php" method="post">
+          <input type="text" name="username" class="input-field" placeholder="Username" required>
+          <input type="password" name="password" class="input-field" placeholder="Password" required>
+          <input id="rempass" type="checkbox" name="" class="check-box"><label for="rempass"><span>Remember Password</span></label>
+          <a class="repass" href="#">Forgot Password?</a>
+          <button type="submit" class="submit-btn" name="submit" value="submit">login</button>
+        </form>
+
+        <?php echo $success; ?>
+        <?php echo $error; ?>
+        <form id="signin" class="login-form" action="register.php" method="post">
+          <input type="text" name="username" class="input-field" placeholder="Username" required>
+          <input type="email" name="email" class="input-field" placeholder="E-mail" required>
+          <input type="password" name="password" class="input-field" placeholder="Password" required>
+          <input type="password" name="confirm_password" class="input-field" placeholder="Confirm Password" required>
+          <!--input type="checkbox" class="check-box"><span>terms & policies</span>-->
+          <button type="submit" name="submit" value="Submit" class="submit-btn">Sgin In</button>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      let log = document.getElementById("login");
+      let sign = document.getElementById("signin");
+      let lrshift = document.getElementById("btn");
+
+      log.style.left = "50px";
+      lrshift.style.left = "-10px";
+
+      function signin() {
+        log.style.left = "-400px";
+        sign.style.left = "50px";
+        lrshift.style.left = "90px";
+      }
+
+      function login() {
+        log.style.left = "50px";
+        sign.style.left = "450px";
+        lrshift.style.left = "-10px";
+      }
+    </script>
+
+  </body>
+</html>
